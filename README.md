@@ -70,7 +70,7 @@ int main() {
 <summary><b>Token in C</b></summary>
 The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
 
-[](https://github.com/mrshakil015/C-Programming-Practice/blob/1dc2663d8150f1550d297d9a5411c934f13892b3/images/Tokens-in-C.png)
+![Token](/images/Tokens-in-C.png)
 
 ### <b>Keyword in C Programming</b>
 ---
