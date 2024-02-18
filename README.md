@@ -77,7 +77,7 @@ The smallest part of a C programming is called Token. The tokens of C language c
 + <code>Operator</code>
 + <code>Special Symbol</code>
 
-### <b>Keyword in C</b>
+### <b>Keyword in C Programming</b>
 ---
 The predefined reserved words of C Programming that have specific meaning for compiler are called keyword of C Programming. Keywords are part of the syntax and they cannot be used as an identifier. There are 32 keywords in C programming.
 
@@ -129,5 +129,35 @@ char while; // keyword used as an identifier
 double $price; // contains special character
 char long variable; // contains space
 ```
+
+### <b>Constant in C Programming</b>
+---
+The constants refer to the variables with fixed values. They are like normal variables but with the difference that their values can not be modified in the program once they are defined.
+
+<b>Types of Constant:</b>
+Primarily, there are three types of Constant:
+
++ Integer Constant --> -1,2,4,6
++ Real Constant --> 10.00, 23.50
++ Character Constant --> 'a','$'
+
+### <b>String in C Programming</b>
+---
+Strings are nothing but an array of characters ended with a null character (‘\0’). This null character indicates the end of the string. Strings are always enclosed in double quotes.
+
+```c
+char string[20] = {'a','b', '\0'};
+char string[20] = "programming";
+char string [] = "programming";
+```
+
+### <b>Operator in C Programming</b>
+---
+Operators are symbols used to perform operations on operands. They include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operators (=, +=, -=, *=, /=), etc.
+
+### <b>Special Symbols in C Programming</b>
+---
+ymbols include various symbols used for punctuation and separation within the program. Examples include semicolons (;), commas (,), parentheses (()), braces ({}), brackets ([]), etc.
+
 
 </details>
