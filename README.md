@@ -62,6 +62,72 @@ int main() {
     return 0;
 }
 
-``
+```
+
+</details>
+
+<details>
+<summary><b>Token in C</b></summary>
+The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
+
++ <code>Keyword</code>
++ <code>Identifier</code>
++ <code>Constant</code>
++ <code>String</code>
++ <code>Operator</code>
++ <code>Special Symbol</code>
+
+### <b>Keyword in C</b>
+---
+The predefined reserved words of C Programming that have specific meaning for compiler are called keyword of C Programming. Keywords are part of the syntax and they cannot be used as an identifier. There are 32 keywords in C programming.
+
+| Keywords  | Keywords  | Keywords  | Keywords  |
+|-----------|-----------|-----------|-----------|
+| auto      | double    | int       | struct    |
+| break     | else      | long      | switch    |
+| case      | enum      | register  | typedef   |
+| char      | extern    | return    | union     |
+| continue  | for       | signed    | void      |
+| do        | if        | static    | while     |
+| default   | goto      | sizeof    | volatile  |
+| const     | float     | short     | unsigned  |
+
+### <b>Identifier in C Programming</b>
+---
+Identifiers refer to the names of variables, functions, and arrays.
+<b>Rules of Identifer:</b>
+
++ First character must be an alphabet or underscore(_).
++ Can only consists of letter, digit and underscore(_).
++ First 31 character are significant.
++ Cannot use keyword as Identifier.
++ Must not contain white space.
+
+There are Two types of Identifiers:
++ Valid
++ Invalid
+
+
+<b>Examples of Valid Identifiers:</b>
+
+```c
+int count;
+float _total;
+char MyVariable;
+double average_score;
+void calculateSum();
+int num123;
+float discount_rate;
+```
+
+<b>Examples of Invalid Identifiers:</b>
+
+```c
+int 123abc; // starts with a digit
+float my-variable; // contains hyphen
+char while; // keyword used as an identifier
+double $price; // contains special character
+char long variable; // contains space
+```
 
 </details>
