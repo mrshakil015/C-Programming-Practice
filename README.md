@@ -157,7 +157,35 @@ Operators are symbols used to perform operations on operands. They include arith
 
 ### <b>Special Symbols in C Programming</b>
 ---
-ymbols include various symbols used for punctuation and separation within the program. Examples include semicolons (;), commas (,), parentheses (()), braces ({}), brackets ([]), etc.
+Symbols include various symbols used for punctuation and separation within the program. Examples include semicolons (;), commas (,), parentheses (()), braces ({}), brackets ([]), etc.
 
+
+</details>
+
+<details>
+<summary><b>Variable</b></summary>
+
+### <b>Variable in C Programming</b>
+---
+Variable is the name of a memory location which stores some data. It is a container. Each variable has a specific data type, which determines the type of data it can hold (such as integers, floating-point numbers, characters, etc.)
+
+<b>Syntax of declaring a variable:</b>
+```c
+data_type variable_name;
+```
+<b>Example:</b>
+
+```c
+int num = 10;
+char grade = 'A';
+float point = 3,5;
+```
+<b>Rules of Variable Names:</b>
+
++ Names can contain letters, digits and underscores
++ Names must begin with a letter or an underscore (_)
++ Names are case-sensitive (myVar and myvar are different variables)
++ Names cannot contain whitespaces or special characters like !, #, %, etc.
++ Keywords (such as int) cannot be used as names
 
 </details>
