@@ -158,7 +158,7 @@ Symbols include various symbols used for punctuation and separation within the p
 </details>
 
 <details>
-<summary><b>Variable</b></summary>
+<summary><b>Variable in C Programming</b></summary>
 
 ### <b>Variable in C Programming</b>
 ---
@@ -190,5 +190,81 @@ float point = 3,5;
 + Variable Definition
 + Variable Initialization
 
+</details>
+
+<details>
+<summary><b>Data Type in C Programming</b></summary>
+
+### <b>Data Type</b>
+---
+Data types specify the type of data that variables can hold. Each data type has a specific range of values and memory representation.
+
+<b>There are three kinds of Data Types:</b>
+
++ <code>Primary Data Types:</code> The pre-defined data type given in C is called Primary data type. such as integers, float, characters, etc.
++ <code>Derived Data Types:</code> The user-defined data types are defined by the user himself.
++ <code>User-Defined Data Types:</code> The data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types.
+
+![DataTypes](images/DatatypesInC.jpg)
+
+### Range & Size of Data Type:
+---
+Different data types also have different ranges up to which they can store numbers. These ranges may vary from compiler to compiler. Below is a list of ranges along with the memory requirement and format specifiers on the 32-bit GCC compiler.
+
+| Data Type              | Size (bytes) | Range                               | Format Specifier |
+|------------------------|--------------|-------------------------------------|------------------|
+| short int              | 2            | -32,768 to 32,767                   | %hd              |
+| unsigned short int    | 2            | 0 to 65,535                         | %hu              |
+| unsigned int           | 4            | 0 to 4,294,967,295                  | %u               |
+| int                    | 4            | -2,147,483,648 to 2,147,483,647     | %d               |
+| long int               | 4            | -2,147,483,648 to 2,147,483,647     | %ld              |
+| unsigned long int     | 4            | 0 to 4,294,967,295                  | %lu              |
+| long long int          | 8            | -(2^63) to (2^63)-1                 | %lld             |
+| unsigned long long int | 8            | 0 to 18,446,744,073,709,551,615     | %llu             |
+| signed char            | 1            | -128 to 127                         | %c               |
+| unsigned char          | 1            | 0 to 255                            | %c               |
+| float                  | 4            | 1.2E-38 to 3.4E+38                  | %f               |
+| double                 | 8            | 1.7E-308 to 1.7E+308                | %lf              |
+| long double            | 16           | 3.4E-4932 to 1.1E+4932              | %Lf              |
+
+<b>To find the range of data types in C Programming:</b>
+
+```c
+#include <stdio.h>
+#include <limits.h>
+
+int main() {
+    printf("Range of char: %d to %d\n", CHAR_MIN, CHAR_MAX);
+    printf("Range of unsigned char: 0 to %d\n", UCHAR_MAX);
+    printf("Range of short: %d to %d\n", SHRT_MIN, SHRT_MAX);
+    printf("Range of unsigned short: 0 to %u\n", USHRT_MAX);
+    printf("Range of int: %d to %d\n", INT_MIN, INT_MAX);
+    printf("Range of unsigned int: 0 to %u\n", UINT_MAX);
+    printf("Range of long: %ld to %ld\n", LONG_MIN, LONG_MAX);
+    printf("Range of unsigned long: 0 to %lu\n", ULONG_MAX);
+    printf("Range of long long: %lld to %lld\n", LLONG_MIN, LLONG_MAX);
+    printf("Range of unsigned long long: 0 to %llu\n", ULLONG_MAX);
+
+    return 0;
+}
+
+```
+<b>To find the size of data types in C Programming:</b>
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Size of char: %zu bytes\n", sizeof(char));
+    printf("Size of short int: %zu bytes\n", sizeof(short int));
+    printf("Size of int: %zu bytes\n", sizeof(int));
+    printf("Size of long int: %zu bytes\n", sizeof(long int));
+    printf("Size of long long int: %zu bytes\n", sizeof(long long int));
+    printf("Size of float: %zu bytes\n", sizeof(float));
+    printf("Size of double: %zu bytes\n", sizeof(double));
+    printf("Size of long double: %zu bytes\n", sizeof(long double));
+    return 0;
+}
+
+```
 
 </details>
