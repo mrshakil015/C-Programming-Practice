@@ -70,12 +70,7 @@ int main() {
 <summary><b>Token in C</b></summary>
 The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
 
-+ <code>Keyword</code>
-+ <code>Identifier</code>
-+ <code>Constant</code>
-+ <code>String</code>
-+ <code>Operator</code>
-+ <code>Special Symbol</code>
+[](https://github.com/mrshakil015/C-Programming-Practice/blob/1dc2663d8150f1550d297d9a5411c934f13892b3/images/Tokens-in-C.png)
 
 ### <b>Keyword in C Programming</b>
 ---
@@ -172,6 +167,7 @@ Variable is the name of a memory location which stores some data. It is a contai
 <b>Syntax of declaring a variable:</b>
 ```c
 data_type variable_name;
+data_type variable_name = value;
 ```
 <b>Example:</b>
 
@@ -187,5 +183,12 @@ float point = 3,5;
 + Names are case-sensitive (myVar and myvar are different variables)
 + Names cannot contain whitespaces or special characters like !, #, %, etc.
 + Keywords (such as int) cannot be used as names
+
+<b>There are 3 aspects of defining a variable:</b>
+
++ Variable Declaration
++ Variable Definition
++ Variable Initialization
+
 
 </details>
