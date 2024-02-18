@@ -207,7 +207,7 @@ Data types specify the type of data that variables can hold. Each data type has 
 
 ![DataTypes](images/DatatypesInC.jpg)
 
-### Range & Size of Data Type:
+### Range & Size of Data Types:
 ---
 Different data types also have different ranges up to which they can store numbers. These ranges may vary from compiler to compiler. Below is a list of ranges along with the memory requirement and format specifiers on the 32-bit GCC compiler.
 
@@ -249,7 +249,9 @@ int main() {
 }
 
 ```
+
 <b>To find the size of data types in C Programming:</b>
+
 ```c
 #include <stdio.h>
 
@@ -265,6 +267,190 @@ int main() {
     return 0;
 }
 
+```
+</details>
+
+<details>
+<summary><b>Operators in C Programming</b></summary>
+
+### <b>Operators:</b>
+---
+An operator is a symbol that tells the computer to perform certain mathematical or logical manipulations. Operator are used in programs to manipulate data and variables.
+
+<b>There are several types of Operator in C Programming:</b>
+
++ Arithmetic Opeators --> <code>+ , - , * , / , % </code>
++ Realtional Operators --> <code>&& , || , ! </code>
++ Logical Operators --> <code>> , < , >= , <=</code>
++ Assignment Operators --> <code>=</code>
++ Increment/Decrement Operators --> <code>++ , --</code>
++ Conditional Operators --> <code>? , :</code>
++ Bitwise Operators --> <code>& ,| , << , >> , ~ , ^</code>
++ Special Operators --> <code>sizeof(), ' , ;</code>
+
+### <b>Arithmetic Operators:</b>
+---
+
+| Operator | Meaning of Operator          |
+|----------|------------------------------|
+| +        | addition or unary plus       |
+| -        | subtraction or unary minus   |
+| *        | multiplication               |
+| /        | division                     |
+| %        | remainder after division     |
+
+
+```c
+#include <stdio.h>
+int main()
+{
+    int a = 9,b = 4, c;
+    
+    c = a+b;
+    printf("a+b = %d \n",c);
+    c = a-b;
+    printf("a-b = %d \n",c);
+    c = a*b;
+    printf("a*b = %d \n",c);
+    c = a/b;
+    printf("a/b = %d \n",c);
+    c = a%b;
+    printf("Remainder when a divided by b = %d \n",c);
+    
+    return 0;
+}
+```
+
+### <b>Relational Operators:</b>
+---
+
+| Operator | Meaning of Operator         |
+|----------|-----------------------------|
+| ==       | Equal to                    |
+| >        | Greater than                |
+| <        | Less than                   |
+| !=       | Not equal to                |
+| >=       | Greater than or equal to    |
+| <=       | Less than or equal to       |
+
+```c
+// Working of relational operators
+#include <stdio.h>
+int main()
+{
+    int a = 5, b = 5, c = 10;
+
+    printf("%d == %d is %d \n", a, b, a == b);
+    printf("%d == %d is %d \n", a, c, a == c);
+    printf("%d > %d is %d \n", a, b, a > b);
+    printf("%d > %d is %d \n", a, c, a > c);
+    printf("%d < %d is %d \n", a, b, a < b);
+    printf("%d < %d is %d \n", a, c, a < c);
+    printf("%d != %d is %d \n", a, b, a != b);
+    printf("%d != %d is %d \n", a, c, a != c);
+    printf("%d >= %d is %d \n", a, b, a >= b);
+    printf("%d >= %d is %d \n", a, c, a >= c);
+    printf("%d <= %d is %d \n", a, b, a <= b);
+    printf("%d <= %d is %d \n", a, c, a <= c);
+
+    return 0;
+}
+```
+<b>Output:</b>
+
+```c
+5 == 5 is 1
+5 == 10 is 0
+5 > 5 is 0
+5 > 10 is 0
+5 < 5 is 0
+5 < 10 is 1
+5 != 5 is 0
+5 != 10 is 1
+5 >= 5 is 1
+5 >= 10 is 0
+5 <= 5 is 1
+5 <= 10 is 1 
+```
+
+### <b>Logical Operators:</b>
+---
+The logical operator are used when we want to test more than one condition and make decision.
+
+| Operator | Meaning                 |
+|----------|-------------------------|
+| &&       | Logical AND             |
+| \|\|     | Logical OR              |
+| !        | Logical NOT             |
+
+```c
+#include <stdio.h>
+
+int main() {
+    int c = 5, d = 2;
+
+    // Logical AND (&&) operator
+    printf("Logical AND:\n");
+    printf("(%d == 5) && (%d > 5) evaluates to %d\n", c, d, (c == 5) && (d > 5));  // false (0)
+    printf("(%d == 5) && (%d < 5) evaluates to %d\n", c, d, (c == 5) && (d < 5));  // true (1)
+
+    // Logical OR (||) operator
+    printf("\nLogical OR:\n");
+    printf("(%d == 5) || (%d > 5) evaluates to %d\n", c, d, (c == 5) || (d > 5));  // true (1)
+    printf("(%d == 5) || (%d < 5) evaluates to %d\n", c, d, (c == 5) || (d < 5));  // true (1)
+
+    // Logical NOT (!) operator
+    printf("\nLogical NOT:\n");
+    printf("!(%d == 5) evaluates to %d\n", c, !(c == 5));  // false (0)
+    printf("!(%d != 5) evaluates to %d\n", c, !(c != 5));  // true (1)
+
+    return 0;
+}
+
+```
+
+### <b>Assignment Operators:</b>
+---
+Assignment Operators are used to assign the resultof an expression to a variable. Main assignment operator <code>=</code>.
+
+| Operator | Example | Same as     |
+|----------|---------|-------------|
+| =        | a = b   | a = b       |
+| +=       | a += b  | a = a + b   |
+| -=       | a -= b  | a = a - b   |
+| *=       | a *= b  | a = a * b   |
+| /=       | a /= b  | a = a / b   |
+| %=       | a %= b  | a = a % b   |
+
+<b>Syntax:</b>
+
+```c
+int a;  //-->Declaration
+a = 10; //-->Assignment
+int a = 10; //--> Initialigation
+```
+
+```c
+#include <stdio.h>
+int main()
+{
+    int a = 5, c;
+
+    c = a;      // c is 5
+    printf("c = %d\n", c);
+    c += a;     // c is 10 
+    printf("c = %d\n", c);
+    c -= a;     // c is 5
+    printf("c = %d\n", c);
+    c *= a;     // c is 25
+    printf("c = %d\n", c);
+    c /= a;     // c is 5
+    printf("c = %d\n", c);
+    c %= a;     // c = 0
+    printf("c = %d\n", c);
+
+    return 0;
+}
 ```
 
 </details>
