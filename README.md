@@ -285,8 +285,6 @@ An operator is a symbol that tells the computer to perform certain mathematical 
 + Assignment Operators --> <code>=</code>
 + Increment/Decrement Operators --> <code>++ , --</code>
 + Conditional Operators --> <code>? , :</code>
-+ Bitwise Operators --> <code>& ,| , << , >> , ~ , ^</code>
-+ Special Operators --> <code>sizeof(), ' , ;</code>
 
 ### <b>Arithmetic Operators:</b>
 ---
@@ -299,6 +297,7 @@ An operator is a symbol that tells the computer to perform certain mathematical 
 | /        | division                     |
 | %        | remainder after division     |
 
+<b>Working of Arithmetic operators</b>
 
 ```c
 #include <stdio.h>
@@ -333,8 +332,9 @@ int main()
 | >=       | Greater than or equal to    |
 | <=       | Less than or equal to       |
 
+<b>Working of Relational operators</b>
+
 ```c
-// Working of relational operators
 #include <stdio.h>
 int main()
 {
@@ -383,6 +383,8 @@ The logical operator are used when we want to test more than one condition and m
 | \|\|     | Logical OR              |
 | !        | Logical NOT             |
 
+<b>Working of Logical operators</b>
+
 ```c
 #include <stdio.h>
 
@@ -429,6 +431,7 @@ int a;  //-->Declaration
 a = 10; //-->Assignment
 int a = 10; //--> Initialigation
 ```
+<b>Working of Assignment operators</b>
 
 ```c
 #include <stdio.h>
@@ -449,6 +452,65 @@ int main()
     c %= a;     // c = 0
     printf("c = %d\n", c);
 
+    return 0;
+}
+```
+
+### <b>Increment & Decrement Operator</b>
+---
+Increment ++ increases the value by 1 whereas decrement -- decreases the value by 1.
+
+<b>Working of increment and decrement operators</b>
+
+```c
+#include <stdio.h>
+int main()
+{
+    int a = 10, b = 100;
+    float c = 10.5, d = 100.5;
+
+    printf("++a = %d \n", ++a);
+    printf("--b = %d \n", --b);
+    printf("++c = %f \n", ++c);
+    printf("--d = %f \n", --d);
+
+    return 0;
+}
+```
+
+### <b>Conditional Operators</b>
+---
+The conditional operator in C is kind of similar to the if-else statement as it follows the same algorithm as of if-else statement but the conditional operator takes less space and helps to write the if-else statements in the shortest way possible. It is also known as the ternary operator in C as it operates on three operands.
+
+Syntax:
+
+```sql
+condition ? expression1 : expression2
+or
+variable = expression1 ? expression2 : expression3
+```
+
+![Syntax](images/syntax-of-conditional-or-ternary-operator-in-c.png)
+
+<b>Working of Conditional Statement:</b>
+
++ Step 1: If the Condition is True then Expression1 will be executed.
++ Step 2: If the condition is false then Expression2 will be executed.
++ Step 3: Results will be returned.
+
+![Flowchart](images/flowchart-of-conditional-or-ternary-operator-in-c.png)
+
+Example:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int num = 100, num2=20;
+    int max = (num>num2) ? num : num2;
+    printf("Maximum Number is: %d\n", max);
+    
     return 0;
 }
 ```
