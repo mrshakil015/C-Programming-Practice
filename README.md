@@ -158,6 +158,120 @@ Symbols include various symbols used for punctuation and separation within the p
 </details>
 
 <details>
+<summary><b>Input & Output(I/O) in C Programming</b></summary>
+
+Input and output operations in C programming are typically performed using the stdio.h library, which provides functions for reading input from the user (stdin) and writing output to the screen (stdout).
+
+### <b>Input:</b>
+---
+The <code>scanf()</code> method, in C, reads the value from the console as per the type specified. 
+
+<b>Syntax:</b>
+
+```c
+scanf(“%X”, &variableOfXType);
+```
+
+where %X is the format specifier in C. It is a way to tell the compiler what type of data is in a variable and & is the address operator in C, which tells the compiler to change the real value of this variable, stored at this address in the memory.
+
+<b>Input Format:</b>
+
+```c
+int     --> scanf("%d", &variableName);
+float   --> scanf("%f", &variableName);
+char    --> scanf("%c", &variableName); //for single character
+            scanf("%s", variableName); //for string
+```
+
+There are several method to reading character and string in C.
+
++ <code>getchar():</code> Used to read a single character from the standard input (stdin).<b>Example:</b>
+  
+  ```c
+    char ch;
+    ch = getchar();
+  ```
++ <code>gets():</code> Used to read a string from the standard input (stdin). (Note: This function is unsafe and should be avoided due to buffer overflow vulnerabilities.)<b>Example:</b>
+  
+  ```c
+    char str[50];
+    printf("Enter a string: ");
+    gets(str);
+  ```
+
++ <code>fgets():</code> Used to read a string from the standard input (stdin) along with specifying the maximum number of characters to read.
+  
+  ```c
+    char str[50];
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+  ```
+
++ <code>scanset:</code> When we used scanset <code>%[^\n]s</code> that time after reading the input we need to used <code>getchar()</code>, because it clear the input buffer. Otherwise we don't get the second input.
+
+  ```c
+    #include <stdio.h>
+
+    int main()
+    {
+
+        char str[20];
+        char str2[20];
+
+        printf("Enter string: ");
+        scanf("%[^\n]s", str);
+        getchar();
+
+        printf("Enter string2: ");
+        scanf("%[^\n]s", str2);
+        getchar();
+
+        printf("%s", str);
+        printf("%s", str2);
+
+        return 0;
+    }
+
+  ```
+
+### <b>Output:</b>
+---
+<code>printf()</code> Used for formatted output. It displays the output on the screen.
+
+<b>Syntax:</b>
+
+```c
+printf(“%X”, variableOfXType);
+```
+
+where %X is the format specifier in C. It is a way to tell the compiler what type of data is in a variable and & is the address operator in C, which tells the compiler to change the real value of this variable, stored at this address in the memory.
+
+<b>Output Format:</b>
+
+```c
+int     --> printf("%d", variableName);
+float   --> printf("%f", variableName);
+char    --> printf("%c", variableName);
+            printf("%s", variableName); //for string
+```
+
+<b>Example:</b>
+
+```c
+#include <stdio.h>    
+int main()
+{ 
+    int testInteger = 5;
+    printf("C Programming");
+
+    printf("Number = %d", testInteger);
+    return 0;
+}
+```
+
+</detials>
+
+<details>
 <summary><b>Variable in C Programming</b></summary>
 
 ### <b>Variable in C Programming</b>
