@@ -697,6 +697,49 @@ int main() {
 }
 ```
 
+### <b>if...else Statement in C</b>
+---
+The if-else statement is used to execute one block of code if a condition is true and another block of code if the condition is false.
+
+<b>Syntax:</b>
+
+```c
+if (condition) {
+    // Code to execute if condition is true
+} else {
+    // Code to execute if condition is false
+}
+```
+<b>Flowchart of if...else Statement:</b>
+
+![flowchart](images/flowchart_of_if_else_in_c.png)
+
+<b>Working of if...else Statement:</b>
+
+![working](images/how-if-else-works-c-programming.webp)
+
+<b>Example:</b>
+
+```c
+// Check whether an integer is odd or even
+
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    if  (number%2 == 0) {
+        printf("%d is an even integer.",number);
+    }
+    else {
+        printf("%d is an odd integer.",number);
+    }
+
+    return 0;
+}
+```
+
 </details>
 
 <details>
@@ -718,5 +761,6 @@ int main() {
       + 21-30 --> Medium
       + 31-60 --> Heavy
       + 61+ --> Extra Heavy.
+   6. Calculate Electrical Bill
 
 </details>
