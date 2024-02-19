@@ -637,7 +637,7 @@ int main()
 
 <details>
 
-<summary><b>Conditional Statement in C Programming</b>
+<summary><b>Conditional Statement in C Programming</b></summary>
 
 Conditional statements in C programming are used to make decisions based on conditions. They are also known as Decision-Making Statements and are used to evaluate one or more conditions and make the decision whether to execute a set of statements or not.
 
@@ -651,7 +651,7 @@ There are several types of conditional Statement:
 + if-else-if Ladder
 + switch Statement
 + Conditional Operators
-+ Jump Statements: 
++ Jump Statements:
   + break
   + continue
   + goto
@@ -674,6 +674,7 @@ if(condition)
 ```
 
 <b>Working of if Statement:</b>
+
 ![Flowchart](images/working-c-if-statement.webp)
 
 <b>Example:</b>
