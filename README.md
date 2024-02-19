@@ -1,4 +1,4 @@
-# C Programming Practice
+# C Programming Learning
 
 <details>
 
@@ -67,97 +67,7 @@ int main() {
 </details>
 
 <details>
-<summary><b>Token in C</b></summary>
-The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
 
-![Token](/images/Tokens-in-C.png)
-
-### <b>Keyword in C Programming</b>
----
-The predefined reserved words of C Programming that have specific meaning for compiler are called keyword of C Programming. Keywords are part of the syntax and they cannot be used as an identifier. There are 32 keywords in C programming.
-
-| Keywords  | Keywords  | Keywords  | Keywords  |
-|-----------|-----------|-----------|-----------|
-| auto      | double    | int       | struct    |
-| break     | else      | long      | switch    |
-| case      | enum      | register  | typedef   |
-| char      | extern    | return    | union     |
-| continue  | for       | signed    | void      |
-| do        | if        | static    | while     |
-| default   | goto      | sizeof    | volatile  |
-| const     | float     | short     | unsigned  |
-
-### <b>Identifier in C Programming</b>
----
-Identifiers refer to the names of variables, functions, and arrays.
-<b>Rules of Identifer:</b>
-
-+ First character must be an alphabet or underscore(_).
-+ Can only consists of letter, digit and underscore(_).
-+ First 31 character are significant.
-+ Cannot use keyword as Identifier.
-+ Must not contain white space.
-
-There are Two types of Identifiers:
-+ Valid
-+ Invalid
-
-
-<b>Examples of Valid Identifiers:</b>
-
-```c
-int count;
-float _total;
-char MyVariable;
-double average_score;
-void calculateSum();
-int num123;
-float discount_rate;
-```
-
-<b>Examples of Invalid Identifiers:</b>
-
-```c
-int 123abc; // starts with a digit
-float my-variable; // contains hyphen
-char while; // keyword used as an identifier
-double $price; // contains special character
-char long variable; // contains space
-```
-
-### <b>Constant in C Programming</b>
----
-The constants refer to the variables with fixed values. They are like normal variables but with the difference that their values can not be modified in the program once they are defined.
-
-<b>Types of Constant:</b>
-Primarily, there are three types of Constant:
-
-+ Integer Constant --> -1,2,4,6
-+ Real Constant --> 10.00, 23.50
-+ Character Constant --> 'a','$'
-
-### <b>String in C Programming</b>
----
-Strings are nothing but an array of characters ended with a null character (‘\0’). This null character indicates the end of the string. Strings are always enclosed in double quotes.
-
-```c
-char string[20] = {'a','b', '\0'};
-char string[20] = "programming";
-char string [] = "programming";
-```
-
-### <b>Operator in C Programming</b>
----
-Operators are symbols used to perform operations on operands. They include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operators (=, +=, -=, *=, /=), etc.
-
-### <b>Special Symbols in C Programming</b>
----
-Symbols include various symbols used for punctuation and separation within the program. Examples include semicolons (;), commas (,), parentheses (()), braces ({}), brackets ([]), etc.
-
-
-</details>
-
-<details>
 <summary><b>Input & Output(I/O) in C Programming</b></summary>
 
 Input and output operations in C programming are typically performed using the stdio.h library, which provides functions for reading input from the user (stdin) and writing output to the screen (stdout).
@@ -269,9 +179,102 @@ int main()
 }
 ```
 
-</detials>
+</details>
 
 <details>
+
+<summary><b>Token in C</b></summary>
+The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
+
+![Token](/images/Tokens-in-C.png)
+
+### <b>Keyword in C Programming</b>
+---
+The predefined reserved words of C Programming that have specific meaning for compiler are called keyword of C Programming. Keywords are part of the syntax and they cannot be used as an identifier. There are 32 keywords in C programming.
+
+| Keywords  | Keywords  | Keywords  | Keywords  |
+|-----------|-----------|-----------|-----------|
+| auto      | double    | int       | struct    |
+| break     | else      | long      | switch    |
+| case      | enum      | register  | typedef   |
+| char      | extern    | return    | union     |
+| continue  | for       | signed    | void      |
+| do        | if        | static    | while     |
+| default   | goto      | sizeof    | volatile  |
+| const     | float     | short     | unsigned  |
+
+### <b>Identifier in C Programming</b>
+---
+Identifiers refer to the names of variables, functions, and arrays.
+<b>Rules of Identifer:</b>
+
++ First character must be an alphabet or underscore(_).
++ Can only consists of letter, digit and underscore(_).
++ First 31 character are significant.
++ Cannot use keyword as Identifier.
++ Must not contain white space.
+
+There are Two types of Identifiers:
++ Valid
++ Invalid
+
+
+<b>Examples of Valid Identifiers:</b>
+
+```c
+int count;
+float _total;
+char MyVariable;
+double average_score;
+void calculateSum();
+int num123;
+float discount_rate;
+```
+
+<b>Examples of Invalid Identifiers:</b>
+
+```c
+int 123abc; // starts with a digit
+float my-variable; // contains hyphen
+char while; // keyword used as an identifier
+double $price; // contains special character
+char long variable; // contains space
+```
+
+### <b>Constant in C Programming</b>
+---
+The constants refer to the variables with fixed values. They are like normal variables but with the difference that their values can not be modified in the program once they are defined.
+
+<b>Types of Constant:</b>
+Primarily, there are three types of Constant:
+
++ Integer Constant --> -1,2,4,6
++ Real Constant --> 10.00, 23.50
++ Character Constant --> 'a','$'
+
+### <b>String in C Programming</b>
+---
+Strings are nothing but an array of characters ended with a null character (‘\0’). This null character indicates the end of the string. Strings are always enclosed in double quotes.
+
+```c
+char string[20] = {'a','b', '\0'};
+char string[20] = "programming";
+char string [] = "programming";
+```
+
+### <b>Operator in C Programming</b>
+---
+Operators are symbols used to perform operations on operands. They include arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), assignment operators (=, +=, -=, *=, /=), etc.
+
+### <b>Special Symbols in C Programming</b>
+---
+Symbols include various symbols used for punctuation and separation within the program. Examples include semicolons (;), commas (,), parentheses (()), braces ({}), brackets ([]), etc.
+
+
+</details>
+
+<details>
+
 <summary><b>Variable in C Programming</b></summary>
 
 ### <b>Variable in C Programming</b>
@@ -382,6 +385,7 @@ int main() {
 }
 
 ```
+
 </details>
 
 <details>
@@ -625,6 +629,67 @@ int main()
     int max = (num>num2) ? num : num2;
     printf("Maximum Number is: %d\n", max);
     
+    return 0;
+}
+```
+
+</details>
+
+<details>
+
+<summary><b>Conditional Statement in C Programming</b>
+
+Conditional statements in C programming are used to make decisions based on conditions. They are also known as Decision-Making Statements and are used to evaluate one or more conditions and make the decision whether to execute a set of statements or not.
+
+### <b>Types of Conditional Statement:</b>
+---
+There are several types of conditional Statement:
+
++ if Statement
++ if-else Statement
++ Nested if Statement
++ if-else-if Ladder
++ switch Statement
++ Conditional Operators
++ Jump Statements: 
+  + break
+  + continue
+  + goto
+  + return
+
+![Types](images/Conditional-Statements-in-c.jpg)
+
+### <b>if Statement in C:</b>
+---
+The <b>if</b> statement is used to execute a block of code if a specified condition is true.
+
+<b>Syntax:</b>
+
+```c
+if(condition) 
+{
+   // Statements to execute if
+   // condition is true
+}
+```
+
+<b>Working of if Statement:</b>
+![Flowchart](images/working-c-if-statement.webp)
+
+<b>Example:</b>
+
+```c
+#include <stdio.h>
+int main() {
+    int number;
+
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    if (number < 0) {
+        printf("You entered %d.\n", number);
+    }
+    printf("The if statement is easy.");
+
     return 0;
 }
 ```
