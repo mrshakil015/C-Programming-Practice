@@ -4,6 +4,8 @@
 
 <summary><b>C Programming Introduction:</b></summary>
 
+![CProgramming](images/C-Programming-Language.png)
+
 C is a general-purpose, procedural programming language developed by Dennis Ritchie at Bell Labs in the early 1970s. It was designed to be a systems programming language but has since been used for a wide range of applications, including operating systems, compilers, embedded systems, and application software.
 
 ## <b>Getting Started With C Programming:</b>
@@ -694,5 +696,27 @@ int main() {
     return 0;
 }
 ```
+
+</details>
+
+<details>
+<summary><b>Practice Question</b></summary>
+
+1. Find the Area of a Rectangle.
+2. Find the area of a Circle.
+3. Convert Temperature Celsius(C) to Fahrenheit(F)
+4. Find the given number is Negative or Posative.
+5. Find the area of Triangle
+6. Find the maximum number from two numbers.
+7. <code>If...else:</code>
+   1. Diet Program. Take breakfast, lunch, dinner time as input from the user and find the diet. If time (breakfast=7, lunch=1, dinner=8) or (breakfast=8, lunch=2, dinner=9) then print "Right Diet" otherwise print "Wrong Diet".
+   2. Eligible or Not Eligible for Marriage. If gender=male & age>=21 then print "Eligible for Marriage". If gender=female & age>=18 then print "Eligible for Marriage" otherwise "Not eligible for marriage".
+   3. Create a Simple Calculator.
+   4. Find the biggest number in three numbers.
+   5. Take a input from user name weight. And do this:
+      + 1-20 --> Light
+      + 21-30 --> Medium
+      + 31-60 --> Heavy
+      + 61+ --> Extra Heavy.
 
 </details>
