@@ -705,7 +705,7 @@ There are several types of conditional Statement:
 
 + if Statement
 + if-else Statement
-+ Nested if Statement
++ Nested if..else Statement
 + if-else-if Ladder
 + switch Statement
 + Conditional Operators
@@ -795,6 +795,13 @@ int main() {
     return 0;
 }
 ```
+
+### <b>Nested if-else Statement in C</b>
+---
+
+<b>Flowchart of Nested if...else Statement:</b>
+
+![Nestedifelse](images/nested-if-else-flowchart.webp)
 
 </details>
 
