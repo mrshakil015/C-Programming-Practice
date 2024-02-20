@@ -184,6 +184,61 @@ int main()
 </details>
 
 <details>
+<summary><b>General Structure of C Program</b></summary>
+
+### <b>There are 6 section of C Programming:</b>
+---
+
+1. Documment Section
+2. Link Section
+3. Definition Section
+4. Global Declaration Section
+5. Main Function Section
+6. Sub Program/ Sub function Section
+
+![GeneralStructure](images/GeneralStructure.jpg)
+
+<b>Document Section:</b></br>
+The section that contain different information about the program using comment.. Comments are always ignored by compiler.
+
+```c
+// This is single line comment
+/* This is Multiline comment*/
+```
+
+<b>Link Section:</b></br>
+The section that contains the header files of the pre-defined functions that are being used in the program.
+
+```c
+#include  //This is the link section
+```
+
+<b>Definition Section:</b></br>
+The section where different symbolic contants are defined is called Definition Section.
+</br><b>Note:</b> This is optionl section.
+
+```c
+//Syntax:
+#define identifierName value
+
+//Example
+#define PI 3.1416
+```
+<b>Global Declaration:</b></br>
+The section that contains declaration of global variables and /or user defined functions. Global variables always declare between Definition section and Main Function Sections.
+
+<b>Main Function Section:</b></br>
+The section that contains the definition of main functions. This section can be divided into two parts and can be describe as:</br>
+
++ Declaration Part
++ Execution Part
+
+<b>Sub Program Section:</b></br>
+The section that contains the definitions of user defined functions.
+
+</details>
+
+<details>
 
 <summary><b>Token in C</b></summary>
 The smallest part of a C programming is called Token. The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows:
