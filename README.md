@@ -1,10 +1,11 @@
 # C Programming Learning
 
+![CProgramming](images/C-Programming-Language.png)
+
 <details>
 
 <summary><b>C Programming Introduction:</b></summary>
 
-![CProgramming](images/C-Programming-Language.png)
 
 C is a general-purpose, procedural programming language developed by Dennis Ritchie at Bell Labs in the early 1970s. It was designed to be a systems programming language but has since been used for a wide range of applications, including operating systems, compilers, embedded systems, and application software.
 
