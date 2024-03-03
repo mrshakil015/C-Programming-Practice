@@ -850,6 +850,41 @@ switch (expression)
 + Switch statement cannot work with float type data and we cannot try direct condition in switch.
 + In ANSI varsion of C more than 256 case statement is not parmitted.
 
+### <b>Goto Statement in C:</b>
+---
+The goto requires a label in order to identify the place where the branch is to be made. A label is any valid variable name and must be followed by a colon. The label is placed immediatly before the statement where the control is to be transferred. The goto statement can be used to jump from anywhere to anywhere within a function. Also we can used it to repeate any program.
+
+<b>General Structure:</b>
+
+![gotosyntax](images/goto-syntax.webp)
+
+<b>Working flow of Goto:</b>
+
+![goto](images/goto.png)
+
+<b>Coding Example:</b>
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    char op,rep;
+    start:
+        printf("Enter two number for addition: ");
+        scanf("%d %d", &num1, &num2);
+        printf("Sum = %d",num1+num2);
+    getchar();
+    printf("\nDo you want to repeat(Y/N): ");
+    scanf("%c",&rep);
+    if(rep =='y'|| rep=='Y'){
+        goto start;
+    }
+    return 0;
+}
+```
+
 </details>
 
 <details>
