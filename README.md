@@ -803,6 +803,53 @@ int main() {
 
 ![Nestedifelse](images/nested-if-else-flowchart.webp)
 
+### <b>Switch Statement in C</b>
+---
+
+The switch statement tests the value of a given variable (or expression) against a list of case values and when a match is found then a block of statements associated with that case is executed.
+
+<b>General Stracture of Switch:</b>
+
+```c
+switch (expression)
+​{
+    case constant1:
+      // statements
+      break;
+
+    case constant2:
+      // statements
+      break;
+    .
+    .
+    .
+    default:
+      // default statements
+}
+```
+
+<b>Working Flow of Switch:</b>
+
+![switch](images/switch-case-in-c.png)
+
+<b>Rules for Switch Statement:</b>
++ The switch expression must be integral type (int, char).
++ Case labels must be constants or constant expressions.
++ Case labels must be unique.
++ Case labels must end with colon(:).
++ Each statement of the case can have a break statement. It is optional. The break statement transfers the control of the switch statement.
++ There can be at most one default label.
+
+<b>Coding Example:</b>
+
+```c
+
+```
+
+<b>Problem of Switch Statement:</b>
++ Switch statement cannot work with float type data and we cannot try direct condition in switch.
++ In ANSI varsion of C more than 256 case statement is not parmitted.
+
 </details>
 
 <details>
