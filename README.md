@@ -888,6 +888,86 @@ int main()
 </details>
 
 <details>
+<summary><b>Loop in C Programming</b></summary>
+
+In C programming, a loop is a control structure that allows you to execute a block of code repeatedly.</br> 
+<b>There are three main types of loops in C:</b>
+
++ for loop
++ while loop
++ do..while loop
+
+The loop classified into two general categories:
+
++ `Entry Controlled loops:` In Entry controlled loops the test condition is checked before entering the main body of the loop. For Loop and While Loop is Entry-controlled loops.
++ `Exit Controlled loops:` In Exit controlled loops the test condition is evaluated at the end of the loop body. The loop body will execute at least once, irrespective of whether the condition is true or false. do-while Loop is Exit Controlled loop.
+
+  ![loop](images/Cpp-loops.png)
+
+### <b>For Loop:</b>
+---
+<b>General Structure:</b>
+
+```c
+for(initialigation; condition; increment/decrement)
+{
+  //body of the loop;
+}
+```
+
+<b>Working Flow of For Loop:</b>
+
+![forloop](images/c-for-loop.webp)
+
+<b>The Execution of the For Loop:</b>
+
+1. Initialization of the control variable is done first. The variables are known as loop-control variables. such as i=1;
+2. Then the control variable is tested using the test condition. The condition is a relational expression. Such as i<10 or i>10
+3. If the condition is true, the body of the loop is executed. Othewise the loop is terminated.
+4. Then the control variable is incremented or decremented using an assignment statement, such as i++ or i--
+5. Then the new value of the control variable again tested. If the condition is satisfied, the body of the loop is again executed.
+
+<b>Example:</b>
+
+```c
+#include <stdio.h>
+
+int main(
+  {
+    for(int i=1; i<3; i++)
+    {
+      printf("C Programming\n");
+    }
+    return 0;
+  }
+)
+```
+
+```c
+// Program to calculate the sum of first n natural numbers
+#include <stdio.h>
+int main()
+{
+    int num, count, sum = 0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    // for loop terminates when num is less than count
+    for(count = 1; count <= num; ++count)
+    {
+        sum += count;
+    }
+
+    printf("Sum = %d", sum);
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
 <summary><b>Practice Question</b></summary>
 
 1. Find the Area of a Rectangle.
