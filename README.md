@@ -965,6 +965,43 @@ int main()
 }
 ```
 
+### <b>While Loop</b>
+---
+<b>General Syntax:</b>
+
+```c
+initialization;
+while (testExpression) {
+  // the body of the loop 
+  increment/decrement;
+}
+```
+
+<b>Working flow of while loop:</b>
+
+![while](images/WhileloopinC2.png)
+
+<b>Execution of While Loop:</b></br>
+The test expression is evaluated and if the condition is true, then the body of the loop is executed. After execution of the body, the test-expression is once again evaluted and if it is true, body is executed once again. This process of repeated execution of the body continues until the test-expression finally becomes false and the control is transferred out of the loop. On exit, the programcontinues with the statement immediately after the body of the loop.
+
+<b>Program Example:</b>
+
+```c
+#include <stdio.h>
+
+int main(
+  {
+    int i=1;
+    while(i<3)
+    {
+      printf("C Programming\n");
+      i++;
+    }
+    return 0;
+  }
+)
+```
+
 </details>
 
 <details>
